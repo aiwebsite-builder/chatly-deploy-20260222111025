@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom fonts for a clean look */
+@layer base {
+  html {
+    font-family: 'Inter', sans-serif;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif; /* A more elegant font for headings */
+  }
+}
+
+/* Custom utility classes */
+.text-balance {
+  text-wrap: balance;
+}
+
+.gradient-bg {
+  background: radial-gradient(at 20% 50%, rgba(239, 246, 255, 0.5) 0%, transparent 80%),
+              radial-gradient(at 80% 50%, rgba(254, 243, 199, 0.3) 0%, transparent 80%),
+              radial-gradient(at 50% 10%, rgba(199, 210, 254, 0.2) 0%, transparent 80%);
+}
